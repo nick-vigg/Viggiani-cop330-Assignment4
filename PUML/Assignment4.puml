@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+class Application {
++ main()
++ start()
+}
+
+class ToDoList {
+- toDoTitle : String
+- items[] : ArrayList<Item>
+setTitle()
+getTitle()
+editTitle()
+addItem()
+removeItem()
+displayItems()
+}
+
+class Item {
+itemStatus : boolean
+itemDescription : String
+itemDueDate : String
+
+editDescription()
+
+}
+
+ToDoList *-- Item
+@enduml
