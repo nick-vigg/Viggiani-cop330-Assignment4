@@ -32,7 +32,17 @@ editStatus()
 editDueDate()
 }
 
-
+class ItemController{
+addItemButtonClicked()
+itemDueDateSet()
+itemDescriptionSet()
+isCompleteSet()
+}
+class ListController{
+addListButtonClicked()
+deleteButtonClicked()
+displayListButtonClicked()
+}
 
 javafx.Application <|- App
 App *-- Lists
