@@ -2,17 +2,22 @@
 'https://plantuml.com/class-diagram
 
 
-class Application {
+
+class App {
 + main()
 + start()
+}
+
+class Lists{
+-lists[] : ArrayList<ToDoList>
+addList()
+removeList()
 }
 
 class ToDoList {
 - toDoTitle : String
 - items[] : ArrayList<Item>
 setTitle()
-getTitle()
-editTitle()
 addItem()
 removeItem()
 displayItems()
@@ -24,8 +29,13 @@ itemDescription : String
 itemDueDate : String
 
 editDescription()
-
+editStatus()
+editDueDate()
 }
 
-ToDoList *-- Item
+javafx.Application <|- App
+App *-- Lists
+Lists <-- ToDoList
+ToDoList o-- Item
+
 @enduml
