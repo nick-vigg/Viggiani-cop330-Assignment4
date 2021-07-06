@@ -10,6 +10,7 @@ class App {
 
 class Lists{
 -lists[] : ArrayList<ToDoList>
+-listTitle : String
 addList()
 removeList()
 }
@@ -48,5 +49,7 @@ javafx.Application <|- App
 App *-- Lists
 Lists <-- ToDoList
 ToDoList o-- Item
+Item - ItemController
+Lists - ListController
 
 @enduml
