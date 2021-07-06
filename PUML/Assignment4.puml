@@ -20,18 +20,19 @@ class ToDoList {
 setTitle()
 addItem()
 removeItem()
-displayItems()
 }
 
 class Item {
-itemStatus : boolean
-itemDescription : String
-itemDueDate : String
+- itemStatus : boolean
+- itemDescription : String
+- itemDueDate : String
 
 editDescription()
 editStatus()
 editDueDate()
 }
+
+
 
 javafx.Application <|- App
 App *-- Lists
